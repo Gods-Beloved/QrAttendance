@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zoom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zm_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout
+        style="@style/ZmTitleBar"
+        android:elevation="0dp"
+        zoom:zm_leftButton="@+id/btnBack"
+        zoom:zm_rightButton="@+id/btnMore"
+        zoom:zm_title="@+id/txtTitle" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/ZmBackButton"
+            android:contentDescription="@string/zm_btn_back" />
+
+        <ImageButton
+            android:id="@+id/btnMore"
+            style="@style/ZmBackButton"
+            android:src="@drawable/ic_more_on_light"
+            android:contentDescription="@string/zm_btn_more"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/ZmTitleBarTitle"
+            android:visibility="gone"/>
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFile"
+                android:layout_width="@dimen/zm_btn_width_60dp"
+                android:layout_height="@dimen/zm_btn_width_60dp"
+                android:layout_marginBottom="@dimen/zm_margin_normal_size"
+                android:src="@drawable/zm_ic_filetype_zip"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/fileName"
+                style="@style/ZmTextView.Button.Secondary.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zm_margin_small_size"
+                tools:text="DesignGuidelines.zip" />
+
+            <TextView
+                android:id="@+id/txtTranslateSpeed"
+                style="@style/ZmTextView.Content.Primary.Medium"
+                android:layout_marginBottom="@dimen/zm_margin_small_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="91 KB/782 KB (26.9 KB/s)" />
+            <!--todo width fix length?-->
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/PollingPercentBar"
+                android:layout_marginBottom="@dimen/zm_margin_larger_size"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+            <!--style="?android:progressBarStyleHorizontal"-->
+            <Button
+                android:id="@+id/btnMain"
+                style="@style/ZmButton"
+                android:layout_marginBottom="@dimen/zm_margin_medium_minus_size"
+                android:layout_marginLeft="@dimen/zm_margin_large_size"
+                android:layout_marginRight="@dimen/zm_margin_large_size"
+                android:text="@string/zm_btn_download" />
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/ZmButton.Medium.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/zm_margin_normal_size"
+                android:text="@string/zm_btn_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

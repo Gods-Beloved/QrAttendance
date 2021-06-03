@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/zm_padding_smallest"
+    app:flexWrap="wrap">
+
+    <LinearLayout
+        android:id="@+id/raiseHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/raiseHandImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_270b"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/raiseHandTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/clapImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_1f44f"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/clapTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thumbup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/thumbupImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_1f44d"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/thumbupTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/heartImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_2764"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/heartTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/joy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/joyImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_1f602"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/joyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/openMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/openMouthImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_1f62e"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/openMouthTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/tadaImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_1f389"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tadaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/yesImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_yes"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/yesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/noImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_no"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/noTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/slowerImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_slower"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/slowerTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/zm_padding_small">
+
+        <ImageView
+            android:id="@+id/fasterImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:focusable="false"
+            android:src="@drawable/reaction_faster"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fasterTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zm_dimen_smallest"
+            android:focusable="false"
+            android:text="3" />
+
+    </LinearLayout>
+
+</com.google.android.flexbox.FlexboxLayout>

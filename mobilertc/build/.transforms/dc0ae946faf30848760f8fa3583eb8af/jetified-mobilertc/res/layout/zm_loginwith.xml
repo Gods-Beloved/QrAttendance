@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zoom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="500dp"
+    android:orientation="vertical"
+    android:background="@drawable/zm_window_bg" >
+    
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout
+        android:id="@+id/panelTitleBar"
+        style="@style/ZmTitleBar"
+        zoom:zm_leftButton="@+id/btnBack"
+        zoom:zm_rightButton="@+id/btnSignup"
+        zoom:zm_title="@+id/txtTitle" >
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/ZmTitleBarAction"
+            android:contentDescription="@string/zm_btn_cancel"
+            android:text="@string/zm_btn_cancel" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            style="@style/ZmTitleBarAction"
+            android:text="@string/zm_btn_signup"
+            android:contentDescription="@string/zm_btn_signup" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/ZmTitleBarTitle"
+            android:text="@string/zm_title_login" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/zm_setting_item_group_spacing"
+            android:paddingRight="0dp"
+            android:paddingBottom="30dp">
+
+            <!-- Login Zoom -->
+            
+            <us.zoom.androidlib.widget.ZMSettingsCategory
+                android:id="@+id/panelLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="@dimen/zm_edit_text_normal_height"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/zm_padding_normal_size"
+                    android:paddingRight="@dimen/zm_padding_normal_size" >
+
+                    <EditText
+                        android:id="@+id/edtUserName"
+                        style="@style/ZmInputBox"
+                        android:hint="@string/zm_hint_zoom_account"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="128" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="@dimen/zm_edit_text_normal_height"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/zm_padding_normal_size"
+                    android:paddingRight="@dimen/zm_padding_normal_size" >
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        style="@style/ZmInputBox"
+                        android:hint="@string/zm_hint_zoom_pwd"
+                        android:inputType="textPassword"
+                        android:maxLength="99"
+                        android:selectAllOnFocus="true" />
+                </LinearLayout>
+
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <ViewStub
+                android:id="@+id/viewCloudSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout="@layout/zm_view_cloudswitch"/>
+
+            <Button
+                android:id="@+id/btnLoginZoom"
+                style="@style/ZmButton"
+                android:layout_marginTop="@dimen/zm_margin_medium_size"
+                android:layout_marginLeft="@dimen/zm_margin_medium_size"
+                android:layout_marginRight="@dimen/zm_margin_medium_size"
+                android:layout_width="match_parent"
+                android:text="@string/zm_btn_login" />
+
+            <RelativeLayout
+                android:id="@+id/rlCnSignForgotPasswdPanel"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/zm_margin_medium_size"
+                android:layout_marginRight="@dimen/zm_margin_medium_size"
+                android:layout_marginTop="@dimen/zm_margin_medium_minus_size">
+
+                <Button
+                    android:id="@+id/linkSmsSign"
+                    style="@style/ZmButton.Small.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/zm_btn_sms_login_137212" />
+
+                <Button
+                    android:id="@+id/linkCnForgetPassword"
+                    style="@style/ZmButton.Small.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/zm_lbl_forget_password_57079" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/linkForgetPassword"
+                style="@style/ZmButton.Small.Text"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/zm_margin_medium_minus_size"
+                android:text="@string/zm_lbl_forget_password_57079" />
+
+            <!-- Divider -->
+            <ViewStub
+                android:id="@+id/viewStubInternational"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/zm_view_international_login"/>
+            <ViewStub
+                android:id="@+id/viewStubChina"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout="@layout/zm_view_china_login"/>
+
+        </LinearLayout>
+     
+    </ScrollView>
+
+</LinearLayout>
+

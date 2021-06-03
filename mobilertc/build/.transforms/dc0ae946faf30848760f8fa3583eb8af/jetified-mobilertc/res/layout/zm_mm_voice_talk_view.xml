@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgVoiceRcdHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_voice_talk_def"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:padding="@dimen/zm_padding_medium"
+        android:contentDescription="@string/zm_mm_msg_rcd_hint_def_acc_171833"/>
+
+    <TextView
+        android:id="@+id/txtRcdHintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/zm_height_36dp"
+        android:layout_marginRight="@dimen/zm_height_36dp"
+        android:layout_marginTop="@dimen/zm_height_36dp"
+        android:layout_marginBottom="@dimen/zm_dialog_margin_24dp"
+        android:layout_above="@id/imgVoiceRcdHint"
+        android:text="@string/zm_mm_msg_rcd_hint_def_171833"
+        android:textColor="@color/zm_v2_txt_secondary"
+        android:textSize="@dimen/zm_ui_kit_text_size_15sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:importantForAccessibility="no"/>
+
+</merge>
